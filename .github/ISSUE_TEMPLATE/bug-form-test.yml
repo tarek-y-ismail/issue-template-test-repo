@@ -7,12 +7,11 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-  - type: textarea
+  - type: input
     id: version
     attributes:
       label: Version
       description: "What version of Mir are you running? (hint: you can launch Mir inside an existing session with the `--version` flag)"
-      value: "latest stable"
       placeholder: Tell us what version of Mir you are running.
     validations:
       required: true
