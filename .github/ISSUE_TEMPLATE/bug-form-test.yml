@@ -27,7 +27,7 @@ body:
         CPU: Intel Core i7 9750H
         GPU 1: nVidia GTX 1660Ti, nVidia proprietary drivers 570.169
         GPU 2: Intel UHD Graphics 630, Mesa 25.0.7
-        Monitor Setup: One 1920x1080 monitor conneccted to the nvidia GPU via HDMI, built-in 1920x1080 laptop monitor connected to intel GPU via DisplayPort.
+        Monitor Setup: One 1920x1080 monitor connected to the nvidia GPU via HDMI, built-in 1920x1080 laptop monitor connected to the intel GPU via DisplayPort.
     validations:
       required: true
   - type: textarea
