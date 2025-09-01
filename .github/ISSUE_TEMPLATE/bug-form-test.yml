@@ -12,7 +12,7 @@ body:
     attributes:
       label: Version
       description: "What version of Mir are you running? (hint: you can launch Mir inside an existing session with the `--version` flag)"
-      default: latest stable
+      value: "latest stable"
     validations:
       required: true
   - type: textarea
