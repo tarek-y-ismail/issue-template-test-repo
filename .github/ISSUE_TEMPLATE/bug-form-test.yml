@@ -13,6 +13,7 @@ body:
       label: Version
       description: "What version of Mir are you running? (hint: you can launch Mir inside an existing session with the `--version` flag)"
       placeholder: Tell us what version of Mir you are running.
+      value: "v2.22.0"
     validations:
       required: true
   - type: textarea
