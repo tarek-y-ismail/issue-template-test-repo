@@ -17,6 +17,12 @@ body:
     validations:
       required: true
   - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: |
+        What environment are you running Mir in? Please mention your hardware specifications, OS, Mesa (or nvidia driver) version.
+  - type: textarea
     id: what-happened
     attributes:
       label: What happened?
