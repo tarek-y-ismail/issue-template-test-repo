@@ -41,5 +41,7 @@ body:
     id: logs
     attributes:
       label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      description: |
+        Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+        (hint: You can run your compositor with `<compositor launch command> 2&>1 | tee <log_file_name>` if you're having issues capturing logs)
       render: shell
