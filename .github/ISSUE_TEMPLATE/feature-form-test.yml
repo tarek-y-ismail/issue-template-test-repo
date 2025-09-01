@@ -24,4 +24,4 @@ body:
       placeholder: Tell us more.
       value: "The feature should be enabled through.... If feature Foo is enabled, they should interact in this way: ..."
     validations:
-      required: optional
+      required: false
