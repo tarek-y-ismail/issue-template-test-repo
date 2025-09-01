@@ -25,3 +25,12 @@ body:
       value: "The feature should be enabled through.... If feature Foo is enabled, they should interact in this way: ..."
     validations:
       required: false
+  - type: textarea
+    id: prior-art
+    attributes:
+      label: Prior Art
+      description: Does any Wayland compositor / software implement a similar feature? Please describe how it works there (if any different), and provide links (documentation, code, etc..) if applicable.
+      placeholder: Tell us if anyone else has a similar feature.
+      value: "A compositor I used before, KNOME, implements this feature as..."
+    validations:
+      required: false
