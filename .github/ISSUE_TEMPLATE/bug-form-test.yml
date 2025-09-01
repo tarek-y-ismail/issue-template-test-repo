@@ -44,7 +44,7 @@ body:
     attributes:
       label: Reproduction steps
       description: What did you do to encounter the bug?
-      placeholder: Tell us did!
+      placeholder: Tell us what you did!
     validations:
       required: false
   - type: textarea
