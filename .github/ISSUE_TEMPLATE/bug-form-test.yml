@@ -1,20 +1,30 @@
 name: Bug Report
 description: File a bug report.
-title: "[Bug]: "
+title: "<insert bug issue title here>"
 labels: ["bug", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
+        Please help us out by providing as much information as you can.
+  - type: textarea
+    id: version
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Version
+      description: |
+        What version of Mir are you running? (hint: you can launch Mir inside an existing session with the `--version` flag)
+      default: latest stable
     validations:
-      required: false
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: |
+        What environment are you running Mir in? Please mention your hardware specifications, OS, Mesa (or nvidia driver) version.
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
@@ -24,38 +34,11 @@ body:
       value: "A bug happened!"
     validations:
       required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: textarea
     id: logs
     attributes:
       label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      description: |
+        Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+        (hint: You can run your compositor with `<compositor launch command> 2&>1 | tee <log_file_name>` if you're having issues capturing logs)
       render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
